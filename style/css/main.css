@@ -1,0 +1,80 @@
+.main {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 90%;
+}
+
+.main--title {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 80%;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+@media screen and (min-width: 482px) {
+  .main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+.main--title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  text-align: center;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  background: rgba(232, 249, 2, 0.2235294118);
+  border-radius: 2rem;
+  outline: solid 0.1rem;
+  outline-color: #000000;
+  font-size: 5vw;
+}
+
+.js-image {
+  opacity: 0;
+  transition: opacity 3s ease;
+}
+
+.show {
+  opacity: 2;
+}
+
+.contain {
+  width: 100%;
+  background: #87deeb;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  background-image: url("/style/assets/images/thunderstorm.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+}/*# sourceMappingURL=main.css.map */
