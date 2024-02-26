@@ -1,2 +1,6 @@
 # Projet_meteo
-Application météo
+                 "Application météo"
+                 
+Projet en JS , application météo reliée à une API (openWeatherMap).
+Développé en first-mobile , cette petite application rendra la 
+météo en temps réel par ville recherchées.
