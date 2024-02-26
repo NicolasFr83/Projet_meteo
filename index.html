@@ -6,24 +6,40 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
         <meta description=" application météo météo-France région live soleil nuage pluie">
         <link rel="stylesheet" href="style/css/main.css">
+        <link rel="shortcut icon" href="style/assets/images/favicon-16x16.png" type="image/x-icon">
         <title> Météo du Var </title>
     </head>
-
-    <header>
-        <section class="main main-js">
-            <img src="style/assets/images/icons8-nuage-94.png" alt="cloud" class="main--icon js-image">
-            <h1 class="main--title">Bienvenue sur notre application 100% gratuite</h1>
-            <img src="style/assets/images/icons8-soleil-48.png" alt="sun" class="main--icon js-image">
-        </section>
-    </header>
+    
     <body>
-        <section class="contain">
-        </section>
-    </body>
-    <footer>
-        <section>
+        <header>
+            <section class="main">
+                <h1 class="main--title">Bienvenue sur notre application 100% gratuite</h1>
+            </section>
+        </header>
 
+
+        <form class="weatherForm">
+            <input type="text" class="cityInput" placeholder="Entrez votre Ville">
+            <button class="btn" type="submit">Cherchez météo</button>
+        </form>
+
+        <section class="card">
+            <h1 class="cityDisplay">Paris</h1>
+            <p class="humiditéDisplay">Humidité 80%</p>
+            <p class="descDisplay">Ciel</p>
+            <p class="weatherEmoji">&#x1F31E</p>
+            <p class="windDisplay">Vent</p>
+            <p class="tempMinDisplay tempMin">Temp min :</p>
+            <p class="tempMaxDisplay">temp max :</p>
+            <p class="tempDisplay"> actuelle :20°C</p>
+            <p class="errorDisplay">Entrez une ville</p>
         </section>
-    </footer>
+        <footer>
+            <section class="foot">
+                <p>Développé par Nicolasfr83</p>
+                <img src="style/assets/images/icons8-facebook-nouveau-48.png" alt="Facebook">
+            </section>
+        </footer>
+    </body>
     <script src="js/script.js"></script>
 </html>

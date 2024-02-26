@@ -1,0 +1,40 @@
+@use "../abstract/_all" as abstract
+
+.weatherForm
+    margin: 20px
+    +abstract.d-flex(column, center, center)
+    +abstract.responsive('litle-tablet')
+        +abstract.d-flex(row, center, center)
+
+.cityInput
+    padding: 10px
+    font-size: 2rem
+    font-weight: bold
+    border: 2px solid hsla(0, 0% , 20%, 0.3)
+    border-radius: 10px
+    box-shadow: 2px 2px 5px rgb(255, 255, 0)
+    margin:10px
+    width: 300px
+    background: white
+    text-align: center
+    cursor: grab
+
+    &:hover
+        background: #02a31b
+
+.btn
+    padding: 10px 20px
+    font-weight: bold
+    font-size: 2rem
+    background: #02a31b
+    color: black
+    border: none
+    border-radius: 5px
+    cursor: pointer
+    box-shadow: 2px 2px 5px rgb(255, 255, 0)
+    background: #02a31b
+    text-align: center
+
+    &:hover
+        background: white
+

@@ -16,16 +16,60 @@
         text-align: center
         margin-bottom: 2rem
         margin-top: 2rem
-        background: #e8f90239
-        border-radius: 2rem
-        outline: solid 0.1rem
-        outline-color: #000000
-        font-size: 5vw
+        background: #02a31b
+        font-size: 2rem
+        box-shadow: 2px 2px 5px rgb(255, 255, 0)
+        color: #c0a92b
+        +abstract.responsive('litle-tablet')
+            font-size: 3rem
+
+h1
+    margin-top: 0
+    margin-bottom: 25px
+
+p
+    font-size: 1.5rem
+    margin: 5px 0
+    text-align: center
 
 
-.js-image 
-    opacity: 0
-    transition: opacity 3s ease
+.cityDisplay, windDisplay, tempDisplay, tempMinDisplay, tempMaxDisplay
+    font-size: 4.5rem
+    font-weight: bold
+    color: #00000073
+    margin-bottom: 25px
 
-.show 
-    opacity: 2
+.humidityDisplay
+    font-weight: bold
+    margin-bottom: 25px
+    margin-top: 5px
+
+.descdisplay
+    font-size: italic
+    font-weight: bold
+    font-size: 2rem
+
+
+
+.weatherEmoji
+    margin: 0
+    font-size: 7.5rem
+
+.errorDisplay
+    font-size: 2.5rem
+    font-weight: bold
+    color: rgba(0, 0, 0, 0.463)
+
+
+.foot
+    +abstract.d-flex(column, center, center)
+    margin-top: 2rem
+    background: #02a31b
+    box-shadow: 2px 2px 5px rgb(255, 255, 0)
+    max-width: 85%
+    margin-right: auto
+    margin-left: auto
+    +abstract.responsive('big-phone')
+        max-width: 75%
+    +abstract.responsive('litle-tablet')
+        max-width: 55%
