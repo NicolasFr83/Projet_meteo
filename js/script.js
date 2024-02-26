@@ -75,11 +75,11 @@ function displayWeatherInfo(data){
     cityDisplay.textContent = city;
     humidityDisplay.textContent = `Humidité: ${humidity}%`;
     descDisplay.textContent = description;
-    windDisplay.textContent = `Vent à: ${speed}kmh`;
+    windDisplay.textContent = `Vent à: ${(speed).toFixed(0)}kmh`;
     weatherEmoji.textContent = getWeatherEmoji(id);
-    tempDisplay.textContent = `Température actuelle : ${(temp).toFixed(1)}°C`;
-    tempMinDisplay.textContent = `Température min : ${(temp_min).toFixed(1)}°C`;
-    tempMaxDisplay.textContent = `Température max : ${(temp_max).toFixed(1)}°C`;
+    tempDisplay.textContent = `Température actuelle : ${(temp).toFixed(0)}°C`;
+    tempMinDisplay.textContent = `Température min : ${(temp_min).toFixed(0)}°C`;
+    tempMaxDisplay.textContent = `Température max : ${(temp_max).toFixed(0)}°C`;
 
     cityDisplay.classList.add("cityDisplay");
     weatherEmoji.classList.add("weatherEmoji");
