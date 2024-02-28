@@ -33,12 +33,13 @@
   align-items: center;
   font-family: Georgia, "Times New Roman", Times, serif;
   text-align: center;
+  padding: 0.5rem;
   margin-bottom: 2rem;
   margin-top: 2rem;
   background: #02a31b;
   font-size: 2rem;
   box-shadow: 2px 2px 5px rgb(255, 255, 0);
-  color: #c0a92b;
+  color: rgba(0, 0, 0, 0.4509803922);
 }
 @media screen and (min-width: 768px) {
   .main--title {
@@ -60,24 +61,23 @@ p {
 .cityDisplay {
   font-size: 3.5rem;
   font-weight: bold;
-  color: rgba(0, 0, 0, 0.4509803922);
   margin-bottom: 25px;
 }
 
 .windDisplay {
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: bold;
   color: rgba(0, 0, 0, 0.4509803922);
 }
 
 .tempDisplay {
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: bold;
   color: rgba(0, 0, 0, 0.4509803922);
 }
 
 .tempMinDisplay {
-  margin-top: 0.5rem;
+  margin-top: 2rem;
   font-size: 1.5rem;
   font-weight: bold;
   color: rgba(0, 0, 0, 0.4509803922);
@@ -92,18 +92,19 @@ p {
 }
 
 .humidityDisplay {
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: bold;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
   margin-top: 5px;
   color: rgba(0, 0, 0, 0.4509803922);
   text-align: center;
 }
 
-.descdisplay {
+.descDisplay {
   font-size: italic;
   font-weight: bold;
   font-size: 2rem;
+  color: rgba(0, 0, 0, 0.4509803922);
 }
 
 .weatherEmoji {
@@ -112,6 +113,7 @@ p {
 }
 
 .errorDisplay {
+  margin-bottom: 1rem;
   font-size: 2.5rem;
   font-weight: bold;
   color: rgba(0, 0, 0, 0.463);
@@ -170,13 +172,14 @@ p {
   cursor: grab;
 }
 .cityInput:hover {
-  background: #02a31b;
+  background: #d7efda;
 }
 
 .btn {
+  width: 200px;
   padding: 10px 20px;
   font-weight: bold;
-  font-size: 2rem;
+  font-size: 1.5rem;
   background: #02a31b;
   color: black;
   border: none;
@@ -187,7 +190,7 @@ p {
   text-align: center;
 }
 .btn:hover {
-  background: white;
+  background: #0c8303;
 }
 
 .card {
