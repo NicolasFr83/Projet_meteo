@@ -53,7 +53,8 @@ async function getWeatherData(city){
 
 function displayWeatherInfo(data){
 
-    const {name: city, 
+    const {
+        name: city, 
         main: {temp, temp_min, temp_max, humidity}, 
         weather: [{description, id}],
         wind: {speed} } = data;
@@ -75,7 +76,7 @@ function displayWeatherInfo(data){
     cityDisplay.textContent = city;
     humidityDisplay.textContent = `Humidité: ${humidity}%`;
     descDisplay.textContent = description;
-    windDisplay.textContent = `Vent à: ${(speed).toFixed(0)}kmh`;
+    windDisplay.textContent = `Vent : ${(speed).toFixed(0)}kmh`;
     weatherEmoji.textContent = getWeatherEmoji(id);
     tempDisplay.textContent = `Température actuelle : ${(temp).toFixed(0)}°C`;
     tempMinDisplay.textContent = `Température min : ${(temp_min).toFixed(0)}°C`;
@@ -86,7 +87,7 @@ function displayWeatherInfo(data){
     tempDisplay.classList.add("tempDisplay");
     tempMinDisplay.classList.add("tempMinDisplay");
     tempMaxDisplay.classList.add("tempMaxDisplay");
-    humidityDisplay.classList.add("humiditéDisplay");
+    humidityDisplay.classList.add("humidityDisplay");
     descDisplay.classList.add("descDisplay");
     windDisplay.classList.add("windDisplay");
 
@@ -102,7 +103,7 @@ function displayWeatherInfo(data){
     card.appendChild(tempMaxDisplay);
 }
 
-function getWeatherEmoji(weatherId){
+function getWeatherEmoji(weatherId) {
 
     switch(true){
         case (weatherId >= 200 && weatherId < 232):
