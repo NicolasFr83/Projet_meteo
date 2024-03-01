@@ -5,6 +5,7 @@
 .main
     +abstract.d-flex(column, space-between, center)
     @extend %flux
+    max-width: 89%
     +abstract.responsive('big-phone')
         +abstract.d-flex(row, space-between, center)
 
@@ -17,12 +18,12 @@
         padding: 0.5rem
         margin-bottom: 2rem
         margin-top: 2rem
-        background: #02a31b
-        font-size: 2rem
+        background: #7dedfc
+        font-size: 1.5rem
         box-shadow: 2px 2px 5px rgb(255, 255, 0)
         color: #00000073
         +abstract.responsive('litle-tablet')
-            font-size: 3rem
+            font-size: 2.5rem
 
 h1
     margin-top: 0
@@ -37,46 +38,45 @@ p
 .cityDisplay 
     font-size: 3.5rem
     font-weight: bold
-    // color: #00000073
     margin-bottom: 25px
 
 .windDisplay
     font-size: 2rem
     font-weight: bold
-    color: #00000073
+
 
 .tempDisplay
     font-size: 2rem
     font-weight: bold
-    color: #00000073
+    
 
 .tempMinDisplay
     margin-top: 2rem
     font-size: 1.5rem
     font-weight: bold
-    color: #00000073
     text-align: center
+
 
 
 .tempMaxDisplay
     font-size: 1.5rem
     font-weight: bold
-    color: #00000073
     text-align: center
+
 
 .humidityDisplay
     font-size: 2rem
     font-weight: bold
     margin-bottom: 20px
-    margin-top: 5px
-    color: #00000073
+    margin-top: 1rem
+
     text-align: center
 
 .descDisplay
     font-size: italic
     font-weight: bold
     font-size: 2rem
-    color: #00000073
+
 
 
 
@@ -94,12 +94,24 @@ p
 .foot
     +abstract.d-flex(column, center, center)
     margin-top: 2rem
-    background: #02a31b
+    background: #7dedfc
     box-shadow: 2px 2px 5px rgb(255, 255, 0)
     max-width: 85%
     margin-right: auto
     margin-left: auto
     +abstract.responsive('big-phone')
-        max-width: 75%
+        max-width: 70%
     +abstract.responsive('litle-tablet')
-        max-width: 55%
+        max-width: 70%
+
+    &__text
+        +abstract.d-flex(row, center, center)
+        padding: 5px
+
+.thunderstorm-bg 
+    background-color: #757575
+
+
+.drizzle-bg 
+    background-color: #A5D6A7
+
