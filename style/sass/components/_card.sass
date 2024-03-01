@@ -2,9 +2,9 @@
 @use "../base/_flux"
 
 .card
-    background: #02a31b
+    background:  rgb(255, 255, 0)
     padding: 50px
-    box-shadow: 2px 2px 5px rgb(255, 255, 0)
+    box-shadow: 2px 2px 5px #08c6f2
     min-width: 150px
     +abstract.d-flex(column, center, center)
     max-width: 80%
@@ -14,3 +14,41 @@
         max-width: 70%
     +abstract.responsive('litle-tablet')
         max-width: 50%
+
+.clouds-bg
+    background-image: url('/style/assets/images/clouds.jpg.jpg')
+    background-size: cover
+
+    .few-clouds-bg
+    background-image: url('/style/assets/images/clouds.jpg.jpg')
+    background-size: cover
+
+.thunderstorm-bg 
+    background-image: url('/style/assets/images/thunderstorm.jpg')
+    background-size: cover
+    background-position: center
+
+.clear-sky-bg
+    background-image: url('/style/assets/images/sun.jpg.jpg')
+    background-size: cover
+    background-position: center
+
+.drizzle-bg 
+    background-image: url('/style/assets/images/rain&sun.jpg')
+    background-size: cover
+    background-position: center
+
+.snow-bg
+    background-image: url('/style/assets/images/winter.jpg')
+    background-size: cover
+    background-position: center
+
+.rain-bg
+    background-image: url('/style/assets/images/pluie.jpg')
+    background-size: cover
+    background-position: center
+
+.atmosphere-bg
+    background-image: url('/style/assets/images/brouillard.jpg')
+    background-size: cover
+    background-position: center

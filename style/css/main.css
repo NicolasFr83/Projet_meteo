@@ -17,6 +17,7 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  max-width: 89%;
 }
 @media screen and (min-width: 482px) {
   .main {
@@ -36,14 +37,14 @@
   padding: 0.5rem;
   margin-bottom: 2rem;
   margin-top: 2rem;
-  background: #02a31b;
-  font-size: 2rem;
+  background: #7dedfc;
+  font-size: 1.5rem;
   box-shadow: 2px 2px 5px rgb(255, 255, 0);
   color: rgba(0, 0, 0, 0.4509803922);
 }
 @media screen and (min-width: 768px) {
   .main--title {
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
 }
 
@@ -67,27 +68,23 @@ p {
 .windDisplay {
   font-size: 2rem;
   font-weight: bold;
-  color: rgba(0, 0, 0, 0.4509803922);
 }
 
 .tempDisplay {
   font-size: 2rem;
   font-weight: bold;
-  color: rgba(0, 0, 0, 0.4509803922);
 }
 
 .tempMinDisplay {
   margin-top: 2rem;
   font-size: 1.5rem;
   font-weight: bold;
-  color: rgba(0, 0, 0, 0.4509803922);
   text-align: center;
 }
 
 .tempMaxDisplay {
   font-size: 1.5rem;
   font-weight: bold;
-  color: rgba(0, 0, 0, 0.4509803922);
   text-align: center;
 }
 
@@ -95,8 +92,7 @@ p {
   font-size: 2rem;
   font-weight: bold;
   margin-bottom: 20px;
-  margin-top: 5px;
-  color: rgba(0, 0, 0, 0.4509803922);
+  margin-top: 1rem;
   text-align: center;
 }
 
@@ -104,7 +100,6 @@ p {
   font-size: italic;
   font-weight: bold;
   font-size: 2rem;
-  color: rgba(0, 0, 0, 0.4509803922);
 }
 
 .weatherEmoji {
@@ -125,7 +120,7 @@ p {
   justify-content: center;
   align-items: center;
   margin-top: 2rem;
-  background: #02a31b;
+  background: #7dedfc;
   box-shadow: 2px 2px 5px rgb(255, 255, 0);
   max-width: 85%;
   margin-right: auto;
@@ -133,13 +128,28 @@ p {
 }
 @media screen and (min-width: 482px) {
   .foot {
-    max-width: 75%;
+    max-width: 70%;
   }
 }
 @media screen and (min-width: 768px) {
   .foot {
-    max-width: 55%;
+    max-width: 70%;
   }
+}
+.foot__text {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+}
+
+.thunderstorm-bg {
+  background-color: #757575;
+}
+
+.drizzle-bg {
+  background-color: #A5D6A7;
 }
 
 .weatherForm {
@@ -164,7 +174,7 @@ p {
   font-weight: bold;
   border: 2px solid hsla(0, 0%, 20%, 0.3);
   border-radius: 10px;
-  box-shadow: 2px 2px 5px rgb(255, 255, 0);
+  box-shadow: 2px 2px 5px #08c6f2;
   margin: 10px;
   width: 300px;
   background: white;
@@ -172,7 +182,7 @@ p {
   cursor: grab;
 }
 .cityInput:hover {
-  background: #d7efda;
+  background: rgb(254, 254, 134);
 }
 
 .btn {
@@ -180,23 +190,22 @@ p {
   padding: 10px 20px;
   font-weight: bold;
   font-size: 1.5rem;
-  background: #02a31b;
   color: black;
   border: none;
   border-radius: 5px;
   cursor: pointer;
   box-shadow: 2px 2px 5px rgb(255, 255, 0);
-  background: #02a31b;
+  background: #08c6f2;
   text-align: center;
 }
 .btn:hover {
-  background: #0c8303;
+  background: rgb(255, 255, 0);
 }
 
 .card {
-  background: #02a31b;
+  background: rgb(255, 255, 0);
   padding: 50px;
-  box-shadow: 2px 2px 5px rgb(255, 255, 0);
+  box-shadow: 2px 2px 5px #08c6f2;
   min-width: 150px;
   display: flex;
   flex-direction: column;
@@ -215,6 +224,48 @@ p {
   .card {
     max-width: 50%;
   }
+}
+
+.clouds-bg {
+  background-image: url("/style/assets/images/clouds.jpg.jpg");
+  background-size: cover;
+  background-image: url("/style/assets/images/clouds.jpg.jpg");
+  background-size: cover;
+}
+.thunderstorm-bg {
+  background-image: url("/style/assets/images/thunderstorm.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.clear-sky-bg {
+  background-image: url("/style/assets/images/sun.jpg.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.drizzle-bg {
+  background-image: url("/style/assets/images/rain&sun.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.snow-bg {
+  background-image: url("/style/assets/images/winter.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.rain-bg {
+  background-image: url("/style/assets/images/pluie.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.atmosphere-bg {
+  background-image: url("/style/assets/images/brouillard.jpg");
+  background-size: cover;
+  background-position: center;
 }
 
 * {

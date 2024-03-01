@@ -59,6 +59,7 @@ function displayWeatherInfo(data){
         weather: [{description, id}],
         wind: {speed} } = data;
 
+    card.classList.add(getWeatherBackgroundClass(id));
     card.textContent = "";
     card.style.display = "flex";
 
@@ -74,9 +75,9 @@ function displayWeatherInfo(data){
 
 
     cityDisplay.textContent = city;
-    humidityDisplay.textContent = `Humidité: ${humidity}%`;
+    humidityDisplay.textContent = `Humidité : ${humidity}%`;
     descDisplay.textContent = description;
-    windDisplay.textContent = `Vent : ${(speed).toFixed(0)}kmh`;
+    windDisplay.textContent = `Vent : ${(speed).toFixed(0)}km/h`;
     weatherEmoji.textContent = getWeatherEmoji(id);
     tempDisplay.textContent = `Température actuelle : ${(temp).toFixed(0)}°C`;
     tempMinDisplay.textContent = `Température min : ${(temp_min).toFixed(0)}°C`;
@@ -110,11 +111,11 @@ function getWeatherEmoji(weatherId) {
             return "⛈️";
         case (weatherId >= 300 && weatherId < 321):
             return "🌦️";
-        case (weatherId >= 500 && weatherId < 600):
+        case (weatherId >= 500 && weatherId < 599):
             return "🌧️";
-        case (weatherId >= 600 && weatherId < 700):
+        case (weatherId >= 600 && weatherId < 699):
             return "❄️";
-        case (weatherId >= 700 && weatherId < 800):
+        case (weatherId >= 700 && weatherId < 799):
             return "🌫️";
         case (weatherId === 800):
             return "☀️";
@@ -127,7 +128,29 @@ function getWeatherEmoji(weatherId) {
             return "❓";
     }
 }
-
+function getWeatherBackgroundClass(weatherId) {
+    switch(true) {
+        case (weatherId >= 200 && weatherId < 232):
+            return "thunderstorm-bg";
+        case (weatherId >= 300 && weatherId < 321):
+            return "drizzle-bg";
+        case (weatherId >= 500 && weatherId <599):
+            return "rain-bg";
+        case (weatherId >= 600 && weatherId < 699):
+            return "snow-bg";
+        case (weatherId >= 700 && weatherId < 799):
+            return "atmosphere-bg";
+        case (weatherId === 800):
+            return "clear-sky-bg";
+        case (weatherId === 801):
+            return "few-clouds-bg";
+        case (weatherId >= 802 && weatherId <= 804):
+            return "clouds-bg";
+    
+        default:
+            return "default-bg";
+    }
+}
 
 function displayError(message){
 
@@ -139,3 +162,4 @@ function displayError(message){
     card.style.display = "flex";
     card.appendChild(errorDisplay);
 }
+
